@@ -1,29 +1,18 @@
-
-from flask_session import Session
-
-from flask_wtf import CSRFProtect
-from config import config_map
-from home import create_app
+from flask_script import Manager
+from home import create_app, db
+# 数据表迁移的执行者和解析人员
+from flask_migrate import Migrate, MigrateCommand
 
 # 创建falsk 应用对象
 app = create_app("develop")
+manager = Manager(app)
 
-
-
-# 获取redis数据库连接
-redis_store = redis.StrictRedis(host=Config.REDIS_HOST, port=Config.REDIS_PORT, db=0, password=Config.REDIS_PASSWORD)
-
-# 利用flask-session，将session数据保存到redis中
-Session(app)
-
-# 为flask 补充csrf 防护  以钩子的方式
-CSRFProtect(app)
-
-
-@app.route("/index")
-def index():
-    return "index page"
-
+Migrate(app, db)
+manager.add_command("db",MigrateCommand)
 
 if __name__ == "__main__":
-    app.run()
+    """
+    运行项目
+    python manage.py runserver
+    """
+    manager.run()
