@@ -25,6 +25,7 @@ csrf = CSRFProtect()
 # logging.debug()  # 调试级别
 
 # 设置日志等级
+# 日志等级信息只有在项目运行不在DEBUG 的模式下，才生效控制日志等级的写入
 logging.basicConfig(level=logging.DEBUG)  # 调试debug
 
 # 创建日志记录器，指定日志保存路径、每个日志文件得最大大小、保存的日志个数上限

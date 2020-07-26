@@ -1,5 +1,6 @@
 from . import api
 from home import db
+from home import models
 from flask import current_app
 @api.route("/index")
 def index():
