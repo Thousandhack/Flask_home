@@ -34,3 +34,12 @@ mysql> show tables;
 8 rows in set (0.00 sec)
 
 mysql>
+
+
+redis:字符串，列表，哈希，set
+“key”:"***"
+redis命令设置图片验证码键值对
+设置键值对
+hset image_codes id1 abc
+获取键值对
+hget image_codes id1
