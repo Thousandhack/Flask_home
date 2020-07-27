@@ -19,7 +19,7 @@ class Config(object):
 
     # session 配置 REDIS 数据库也可以配置其他服务器上的配置可以与下面redis配置相同
     SESSION_TYPE = "redis"
-    SESSION_REDIS = redis.StrictRedis(host=REDIS_HOST, port=REDIS_PORT, db=0)  # , password=REDIS_PASSWORD
+    SESSION_REDIS = redis.StrictRedis(host=REDIS_HOST, port=REDIS_PORT, db=0, password=REDIS_PASSWORD)  #
     SESSION_USE_SINER = True  # 对cookie中session_id进行隐藏处理
     PERMANENT_SESSION_LIFETIME = 86400  # session 数据有效期，单位秒
 

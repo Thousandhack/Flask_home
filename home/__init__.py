@@ -4,19 +4,18 @@ from flask_session import Session
 from flask_wtf import CSRFProtect
 from flask_sqlalchemy import SQLAlchemy
 from logging.handlers import RotatingFileHandler
+from home.utils.commons import ReConverter  # 前端相关
 import logging
 import redis
 
 # 数据库
 db = SQLAlchemy()
 
-
 # 获取redis数据库连接
 redis_store = None
 
 # 为flask补充防护机制
 csrf = CSRFProtect()
-
 
 #
 # logging.error("11")  # 错误级别
@@ -37,6 +36,7 @@ formatter = logging.Formatter('%(levelname)s %(filename)s:%(lineno)d %(message)s
 file_log_handler.setFormatter(formatter)
 # 为全局的日志工具对象（flask app 使用的） 添加日志器
 logging.getLogger().addHandler(file_log_handler)
+
 
 # 工厂模式
 def create_app(config_name):
@@ -65,9 +65,16 @@ def create_app(config_name):
     from home import api
     CSRFProtect(app)
 
+    # 为flask 添加自定义的转换器
+    app.url_map.converters["re"] = ReConverter
+
     # 注册蓝图
     # 特意在使用得时候再进行导入是为了避免循环导入
     from home import api
     app.register_blueprint(api.api, url_prefix="/api/v1.0")
+
+    # 注册提供静态文件的蓝图
+    from home.web_html import html
+    app.register_blueprint(html)
 
     return app

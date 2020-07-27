@@ -12,3 +12,25 @@ python manager.py runserver
 
 数据库第一个初始化命令
 >python manage.py db migrate -m "init tables"
+
+把数据结构更新到数据库中
+>>python manage.py db upgrade
+
+mysql> use home ;
+Database changed
+mysql> show tables;
++-------------------+
+| Tables_in_home    |
++-------------------+
+| alembic_version   |
+| ih_area_info      |
+| ih_facility_info  |
+| ih_house_facility |
+| ih_house_image    |
+| ih_house_info     |
+| ih_order_info     |
+| ih_user_profile   |
++-------------------+
+8 rows in set (0.00 sec)
+
+mysql>
