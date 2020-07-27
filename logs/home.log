@@ -82,3 +82,244 @@ INFO _internal.py:122  * Restarting with stat
 WARNING _internal.py:122  * Debugger is active!
 INFO _internal.py:122  * Debugger PIN: 299-190-182
 INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:03:10] "GET /api/v1.0/image_codes/11 HTTP/1.1" 404 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:03:47] "GET /api/v1.0/image_codes/11 HTTP/1.1" 404 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:04:49] "GET /api/v1.0/image_codes/image_code_id=11 HTTP/1.1" 404 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:04:54] "GET /api/v1.0/image_codes/image_code_id=11 HTTP/1.1" 404 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:06:23] "GET /api/v1.0/image_codes/11 HTTP/1.1" 404 -
+INFO _internal.py:122  * Detected change in 'D:\\pyCode\\flaskProject\\Flask_home\\home\\api\\__init__.py', reloading
+INFO _internal.py:122  * Restarting with stat
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 299-190-182
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:14:56] "GET /api/v1.0/image_codes/11 HTTP/1.1" 500 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:14:56] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:14:56] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:14:56] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:14:56] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:14:56] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:14:56] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:122  * Detected change in 'D:\\pyCode\\flaskProject\\Flask_home\\home\\api\\verify_code.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 299-190-182
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:15:17] "GET /api/v1.0/image_codes/11 HTTP/1.1" 500 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:15:17] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:15:17] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:15:17] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:15:17] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:15:17] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:15:17] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:15:19] "GET /api/v1.0/image_codes/11 HTTP/1.1" 500 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:15:19] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:15:19] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:15:19] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:15:19] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:15:19] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py:122  * Detected change in 'D:\\pyCode\\flaskProject\\Flask_home\\home\\utils\\captcha\\captcha.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 299-190-182
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:18:04] "GET /api/v1.0/image_codes/11 HTTP/1.1" 500 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:18:04] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:18:04] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:18:04] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:18:04] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:18:04] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:18:04] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:122  * Detected change in 'D:\\pyCode\\flaskProject\\Flask_home\\home\\utils\\captcha\\captcha.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 299-190-182
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Detected change in 'D:\\pyCode\\flaskProject\\Flask_home\\home\\utils\\captcha\\captcha.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 299-190-182
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:19:49] "GET /api/v1.0/image_codes/11 HTTP/1.1" 500 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:19:49] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:19:49] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:19:49] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:19:49] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:19:49] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:19:49] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:19:50] "GET /api/v1.0/image_codes/11 HTTP/1.1" 500 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:19:50] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:19:50] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:19:50] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:19:50] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:19:50] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:19:50] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:19:50] "GET /api/v1.0/image_codes/11 HTTP/1.1" 500 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:19:50] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:19:50] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:19:50] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:19:50] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:19:50] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:19:50] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:19:50] "GET /api/v1.0/image_codes/11 HTTP/1.1" 500 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:19:50] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:19:50] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:19:50] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:19:50] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:19:50] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:19:50] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:19:50] "GET /api/v1.0/image_codes/11 HTTP/1.1" 500 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:19:50] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:19:50] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:19:50] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:19:51] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:19:51] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:19:51] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:19:51] "GET /api/v1.0/image_codes/11 HTTP/1.1" 500 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:19:51] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:19:51] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:19:51] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:19:51] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:19:51] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:19:51] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:19:51] "GET /api/v1.0/image_codes/11 HTTP/1.1" 500 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:19:51] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:19:51] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:19:51] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:19:51] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:19:51] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:19:51] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:19:51] "GET /api/v1.0/image_codes/11 HTTP/1.1" 500 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:19:51] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:19:51] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:19:51] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:19:51] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:19:51] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:19:51] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:19:51] "GET /api/v1.0/image_codes/11 HTTP/1.1" 500 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:19:51] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:19:51] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:19:51] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:19:51] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:19:51] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:19:51] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:19:52] "GET /api/v1.0/image_codes/11 HTTP/1.1" 500 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:19:52] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:19:52] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:19:52] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:19:52] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:19:52] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:19:52] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:122  * Detected change in 'D:\\pyCode\\flaskProject\\Flask_home\\home\\utils\\captcha\\captcha.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 299-190-182
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Detected change in 'D:\\pyCode\\flaskProject\\Flask_home\\home\\utils\\captcha\\captcha.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 299-190-182
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Detected change in 'D:\\pyCode\\flaskProject\\Flask_home\\home\\utils\\captcha\\captcha.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 299-190-182
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:25:00] "GET /api/v1.0/image_codes/11 HTTP/1.1" 500 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:25:00] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:25:00] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:25:00] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:25:00] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:25:00] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:25:00] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:25:00] "GET /api/v1.0/image_codes/11 HTTP/1.1" 500 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:25:00] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:25:00] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:25:00] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:25:01] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:25:01] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:25:01] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:25:01] "GET /api/v1.0/image_codes/11 HTTP/1.1" 500 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:25:01] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:25:01] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:25:01] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:25:01] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:25:01] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:25:01] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:25:01] "GET /api/v1.0/image_codes/11 HTTP/1.1" 500 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:25:01] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:25:01] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:25:01] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:25:01] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:25:01] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:25:01] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:25:01] "GET /api/v1.0/image_codes/11 HTTP/1.1" 500 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:25:01] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:25:01] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:25:01] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:25:01] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:25:01] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:25:01] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:25:01] "GET /api/v1.0/image_codes/11 HTTP/1.1" 500 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:25:01] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:25:01] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:25:01] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:25:01] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:25:01] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:25:01] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:122  * Detected change in 'D:\\pyCode\\flaskProject\\Flask_home\\home\\utils\\captcha\\captcha.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 299-190-182
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:25:33] "GET /api/v1.0/image_codes/11 HTTP/1.1" 500 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:25:33] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:25:33] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:25:33] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:25:33] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:25:33] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:25:33] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:25:34] "GET /api/v1.0/image_codes/11 HTTP/1.1" 500 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:25:34] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:25:34] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:25:34] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:25:34] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:25:34] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:25:34] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:25:34] "GET /api/v1.0/image_codes/11 HTTP/1.1" 500 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:25:34] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:25:34] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:25:34] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:25:34] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:25:34] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:25:34] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:25:34] "GET /api/v1.0/image_codes/11 HTTP/1.1" 500 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:25:34] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:25:34] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:25:34] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:25:34] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:25:34] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:25:34] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:25:34] "GET /api/v1.0/image_codes/11 HTTP/1.1" 500 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:25:34] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:25:34] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:25:34] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:25:34] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:25:34] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:25:34] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:25:35] "GET /api/v1.0/image_codes/11 HTTP/1.1" 500 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:25:35] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:25:35] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:25:35] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:25:35] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:25:35] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:25:35] "GET /api/v1.0/image_codes/11?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:122  * Detected change in 'D:\\pyCode\\flaskProject\\Flask_home\\home\\utils\\captcha\\captcha.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 299-190-182
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:42:21] "GET /api/v1.0/image_codes/11 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:42:31] "GET /api/v1.0/image_codes/11 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:42:33] "GET /api/v1.0/image_codes/11 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [27/Jul/2020 22:43:30] "GET /api/v1.0/image_codes/11 HTTP/1.1" 200 -

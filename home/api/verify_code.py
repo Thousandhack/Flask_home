@@ -1,7 +1,10 @@
 from . import api
 from home.utils.captcha.captcha import captcha
-from home import redis_store, constants  # 导入redis 实例
+from home import redis_store   # 导入redis 实例
+from home.utils import constants
+from home.utils.response_code import RET
 from flask import current_app
+from flask import make_response
 from flask import jsonify
 
 
@@ -33,6 +36,8 @@ def get_iamge_code(image_code_id):
     except Exception as e:
         # 记录日志
         current_app.logger.error()
-        return jsonify({"status": 500, "msg": "数据设置好状态码失败"})
-
-    return jsonify()
+        return jsonify({"status": RET.DATAERR, "msg": "设置状态码信息失败"})
+    # 返回图片数据
+    resp = make_response(image_data)
+    resp.headers["Content-Type"] = "image/jpg"
+    return resp
