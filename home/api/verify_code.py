@@ -53,6 +53,9 @@ def get_iamge_code(image_code_id):
 def get_sms_code(mobile):
     """
     获取短信验证码
+    验证URL: http://127.0.0.1:5000/api/v1.0/sms_codes/18666951518?image_code=QNCV&image_code_id=11a98b32-6fb6-401d-b0d1-1b28f8566070
+    验证步骤，首先在首页刷新图片验证码，然后获取image_code_id 和图片验证码
+    在用postman向服务端发起get请求
     :return:
     """
     # 获取参数
@@ -73,9 +76,25 @@ def get_sms_code(mobile):
     if real_image_code is None:
         # 表示图片验证码没有或者过期
         return jsonify(errno=RET.NODATA, errmsg="图片验证失效")
+
+    # 删除图片验证码防止用户使用同一图片验证多次
+    # try:
+    #     redis_store.delete("image_code_%s" % image_code_id)
+    # except Exception as e:
+    #     current_app.logger.error(e)
+
     if real_image_code.lower() == image_code.lower():
         # 表示用户填写错误
         return jsonify(errno=RET.DATAERR, errmsg="图片验证码错误")
+    # 判断手机号请求验证码60秒内，不接受处理
+    try:
+        send_flag = redis_store.get("send_sms_code_%s" % mobile)
+    except Exception as e:
+        current_app.logger.error(e)
+    else:
+        if send_flag is not None:
+            # 表示在60秒之前有过发送的记录
+            return jsonify(errno=RET.REQERR, errmsg="请求过于频繁，请一分钟后重试！")
 
     # 判断手机号是否存在，根据此结果是否产生短信验证码
     # db.session(User)
@@ -92,6 +111,7 @@ def get_sms_code(mobile):
     # 保存真实短信验证码
     try:
         redis_store.setex("sms_code_%s" % mobile, constants.SMS_CODE_REDIS_EXPIRES, sms_code)
+        redis_store.setex("send_sms_code_%s" % mobile, constants.SEND_SMS_CODE_INTERVAL, 1)
     except Exception as e:
         current_app.logger.error(e)
         return jsonify(errno=RET.DATAERR, errmsg="短信验证码异常")
