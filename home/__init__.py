@@ -62,8 +62,7 @@ def create_app(config_name):
     Session(app)
 
     # 为flask 补充csrf 防护  以钩子的方式
-    from home import api
-    CSRFProtect(app)
+    # CSRFProtect(app)
 
     # 为flask 添加自定义的转换器
     app.url_map.converters["re"] = ReConverter

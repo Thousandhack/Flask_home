@@ -107,7 +107,7 @@ def get_sms_code(mobile):
         # 表示手机号已存在
         return jsonify(errno=RET.DATAEXIST, errmsg="手机号已存在")
     # 返回值
-    sms_code = "%6d" % random.randint(0, 999999)
+    sms_code = "%06d" % random.randint(0, 999999)
     # 保存真实短信验证码
     try:
         redis_store.setex("sms_code_%s" % mobile, constants.SMS_CODE_REDIS_EXPIRES, sms_code)

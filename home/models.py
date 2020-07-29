@@ -28,6 +28,7 @@ class User(BaseModel, db.Model):
     orders = db.relationship("Order", backref="user")  # 用户下的订单
 
     # 加上property装饰器后，会把函数变为属性，属性名即为函数名
+    # 这快得多了解下
     @property
     def password(self):
         """读取属性的函数行为"""

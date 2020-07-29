@@ -677,3 +677,139 @@ INFO _internal.py:122 127.0.0.1 - - [29/Jul/2020 21:07:26] "GET /register.html H
 INFO _internal.py:122 127.0.0.1 - - [29/Jul/2020 21:07:26] "GET /api/v1.0/image_codes/1c946933-b2c6-4100-9a98-7909fe9e3462 HTTP/1.1" 200 -
 INFO _internal.py:122 127.0.0.1 - - [29/Jul/2020 21:07:26] "GET /favicon.ico HTTP/1.1" 200 -
 INFO _internal.py:122 127.0.0.1 - - [29/Jul/2020 21:07:36] "GET /api/v1.0/sms_codes/18666951518?image_code=v8xs&image_code_id=1c946933-b2c6-4100-9a98-7909fe9e3462 HTTP/1.1" 200 -
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 299-190-182
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [29/Jul/2020 22:07:31] "GET /register.html HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Jul/2020 22:07:31] "GET /api/v1.0/image_codes/7f5d26ad-3ab9-43c3-af01-4e7b7da26b8c HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [29/Jul/2020 22:07:31] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [29/Jul/2020 22:07:42] "GET /api/v1.0/sms_codes/18611111111?image_code=SAYX&image_code_id=7f5d26ad-3ab9-43c3-af01-4e7b7da26b8c HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [29/Jul/2020 22:09:42] "GET /api/v1.0/sms_codes/18611111111?image_code=SAYX&image_code_id=7f5d26ad-3ab9-43c3-af01-4e7b7da26b8c HTTP/1.1" 200 -
+INFO _internal.py:122  * Detected change in 'D:\\pyCode\\flaskProject\\Flask_home\\home\\api\\verify_code.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 299-190-182
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [29/Jul/2020 22:10:16] "GET /register.html HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Jul/2020 22:10:16] "GET /api/v1.0/image_codes/2947e4a4-5e4a-4254-8e51-87b0c0f35149 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [29/Jul/2020 22:10:16] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [29/Jul/2020 22:10:26] "GET /api/v1.0/sms_codes/18666951518?image_code=i3om&image_code_id=2947e4a4-5e4a-4254-8e51-87b0c0f35149 HTTP/1.1" 200 -
+INFO _internal.py:122  * Detected change in 'D:\\pyCode\\flaskProject\\Flask_home\\home\\__init__.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 299-190-182
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 299-190-182
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [29/Jul/2020 22:15:13] "GET /api/v1.0/sms_codes/18666951518?image_code=i3om&image_code_id=2947e4a4-5e4a-4254-8e51-87b0c0f35149 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [29/Jul/2020 22:15:15] "GET /api/v1.0/image_codes/cbc1b031-76fb-489a-9cf6-ae0fc55759ec HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [29/Jul/2020 22:15:23] "GET /api/v1.0/sms_codes/18666951518?image_code=ANEV&image_code_id=cbc1b031-76fb-489a-9cf6-ae0fc55759ec HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [29/Jul/2020 22:17:32] "POST /api/v1.0/users/ HTTP/1.1" 405 -
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 299-190-182
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Detected change in 'D:\\pyCode\\flaskProject\\Flask_home\\home\\api\\passport.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 299-190-182
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [29/Jul/2020 22:20:26] "POST /api/v1.0/users/ HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [29/Jul/2020 22:20:39] "GET /register.html HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Jul/2020 22:20:39] "GET /api/v1.0/image_codes/8bdd2577-c47d-4a13-8fee-877b97ee1902 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [29/Jul/2020 22:20:39] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [29/Jul/2020 22:20:50] "GET /api/v1.0/sms_codes/18611111111?image_code=bhlc&image_code_id=8bdd2577-c47d-4a13-8fee-877b97ee1902 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [29/Jul/2020 22:21:01] "POST /api/v1.0/users/ HTTP/1.1" 200 -
+INFO _internal.py:122  * Detected change in 'D:\\pyCode\\flaskProject\\Flask_home\\home\\api\\passport.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 299-190-182
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [29/Jul/2020 22:22:08] "GET /api/v1.0/image_codes/592f8c38-ef04-4988-ac3b-56e2f8fb40f3 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [29/Jul/2020 22:22:18] "GET /api/v1.0/sms_codes/18611111111?image_code=sabe&image_code_id=592f8c38-ef04-4988-ac3b-56e2f8fb40f3 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [29/Jul/2020 22:22:44] "POST /api/v1.0/users/ HTTP/1.1" 200 -
+INFO _internal.py:122  * Detected change in 'D:\\pyCode\\flaskProject\\Flask_home\\home\\api\\verify_code.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 299-190-182
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Detected change in 'D:\\pyCode\\flaskProject\\Flask_home\\home\\api\\passport.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 299-190-182
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Detected change in 'D:\\pyCode\\flaskProject\\Flask_home\\home\\api\\passport.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 299-190-182
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [29/Jul/2020 22:25:13] "GET /register.html HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Jul/2020 22:25:13] "GET /api/v1.0/image_codes/a2698c41-f65c-4b7c-988c-3d1d9e12d086 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [29/Jul/2020 22:25:13] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [29/Jul/2020 22:25:20] "GET /api/v1.0/image_codes/e230ef1a-8a68-4c58-955a-9c4a81f84ddf HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [29/Jul/2020 22:25:21] "GET /api/v1.0/image_codes/eef58c37-cb9b-48e2-81e3-1093cd7d8a07 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [29/Jul/2020 22:25:25] "GET /api/v1.0/sms_codes/18611111111?image_code=aela&image_code_id=eef58c37-cb9b-48e2-81e3-1093cd7d8a07 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [29/Jul/2020 22:26:19] "POST /api/v1.0/users/ HTTP/1.1" 200 -
+INFO _internal.py:122  * Detected change in 'D:\\pyCode\\flaskProject\\Flask_home\\home\\api\\passport.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 299-190-182
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [29/Jul/2020 22:26:38] "GET /api/v1.0/image_codes/064fab2e-b525-44b1-b5f9-ce8714d0b177 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [29/Jul/2020 22:26:45] "GET /api/v1.0/sms_codes/18611111111?image_code=8fxk&image_code_id=064fab2e-b525-44b1-b5f9-ce8714d0b177 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [29/Jul/2020 22:26:55] "POST /api/v1.0/users/ HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [29/Jul/2020 22:27:04] "POST /api/v1.0/users/ HTTP/1.1" 200 -
+INFO _internal.py:122  * Detected change in 'D:\\pyCode\\flaskProject\\Flask_home\\home\\api\\passport.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 299-190-182
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Detected change in 'D:\\pyCode\\flaskProject\\Flask_home\\home\\api\\passport.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 299-190-182
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Detected change in 'D:\\pyCode\\flaskProject\\Flask_home\\home\\api\\passport.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 299-190-182
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Detected change in 'D:\\pyCode\\flaskProject\\Flask_home\\home\\api\\passport.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 299-190-182
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Detected change in 'D:\\pyCode\\flaskProject\\Flask_home\\home\\api\\passport.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 299-190-182
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Detected change in 'D:\\pyCode\\flaskProject\\Flask_home\\home\\api\\passport.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 299-190-182
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Detected change in 'D:\\pyCode\\flaskProject\\Flask_home\\home\\models.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 299-190-182
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 299-190-182
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [29/Jul/2020 22:59:27] "GET /register.html HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Jul/2020 22:59:28] "GET /api/v1.0/image_codes/767aad07-db02-43bb-af32-effcee4f4929 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [29/Jul/2020 22:59:28] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [29/Jul/2020 22:59:33] "GET /api/v1.0/image_codes/8e9470ef-6572-4a4c-817e-f11347a938fb HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [29/Jul/2020 22:59:38] "GET /api/v1.0/sms_codes/18611111111?image_code=qgvp&image_code_id=8e9470ef-6572-4a4c-817e-f11347a938fb HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [29/Jul/2020 22:59:48] "POST /api/v1.0/users/ HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [29/Jul/2020 22:59:56] "POST /api/v1.0/users/ HTTP/1.1" 200 -
+INFO _internal.py:122  * Detected change in 'D:\\pyCode\\flaskProject\\Flask_home\\home\\api\\passport.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 299-190-182
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
