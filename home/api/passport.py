@@ -14,8 +14,14 @@ import re
 def register():
     """
     注册
+    http://127.0.0.1:5000/api/v1.0/users/
     请求的参数：手机号、短信验证码、密码
     参数格式：json
+    {
+        "mobile":"18611111111",
+        "sms_code":"404989",
+        "password":"123456"
+        }
     :return:
     """
     # 获取请求的json数据，返回字典
@@ -94,3 +100,18 @@ def register():
 
     # 返回结果
     return jsonify(errno=RET.OK, errmsg="注册成功！")
+
+
+@api.route("/sessions", methods=["POST"])
+def login():
+    """
+    用户登录
+    参数：手机号，密码
+    :return:
+    """
+    # 获取参数
+    # 校验参数
+    # 参数完整的校验
+    # 判断手机号
+    # 密码错误次数的限制
+    pass
