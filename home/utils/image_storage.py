@@ -25,5 +25,9 @@ def storage(file_data):
     # localfile = './sync/bbb.jpg'
 
     ret, info = put_data(token, None, file_data)  # None表示让七牛自动生成文件名
+    if info.status_code == 200:
+        # 表示上传成功
+
+
     print(ret)  # 返回一个结果对象
     print(info)  # info['key']  为文件名
