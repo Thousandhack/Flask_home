@@ -15,7 +15,7 @@ import re
 def register():
     """
     注册
-    http://127.0.0.1:5000/api/v1.0/users
+    http://127.0.0.1:5000/api/v1.0/users/
     请求的参数：手机号、短信验证码、密码
     参数格式：json
     {
@@ -109,6 +109,13 @@ def login():
     用户登录
     参数：手机号，密码
     在同个地方登录超过5次后10分钟内不能再次登录
+    接口测试：
+    访问URL:
+        http://127.0.0.1:5000/api/v1.0/sessions/
+        {
+            "mobile":"18611111111",
+            "password":"1238456"
+        }
     :return:
     """
     # 获取参数
@@ -147,7 +154,9 @@ def login():
         return jsonify(errno=RET.DBERR, errmsg="获取用户信息失败！")
 
     # 用数据库的密码与用户填写的密码进行对比验证
-    if not user is None or not user.check_password(password):
+    print(user)
+    print(user.check_password(password))
+    if user is None or not user.check_password(password):
         try:
             redis_store.incr("access_nums_%s" % user_ip)
             redis_store.expire("access_nums_%s" % user_ip, constants.LOGIN_ERROR_FORBIN_TIME)
@@ -161,3 +170,22 @@ def login():
 
     # 返回结果
     return jsonify(errno=RET.OK, errmsg="登录成功！")
+
+
+@api.route("/session", methods=["GET"])
+def check_login():
+    """检查登录状态"""
+    name = session.get("name")
+    # 如果session中数据name名字存在，这表示用户登录，否则未登录
+    if name is not None:
+        return jsonify(errno=RET.OK, errmsg="true", data={"name": name})
+    else:
+        return jsonify(errno=RET.SESSIONERR, errmsg="false")
+
+
+@api.route("/session", methods=["DELETE"])
+def logout():
+    """登出"""
+    # 清除session数据
+    session.clear()
+    return jsonify(errno=RET.OK, errmsg="ok")

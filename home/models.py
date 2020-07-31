@@ -51,13 +51,13 @@ class User(BaseModel, db.Model):
     #     """对密码进行加密"""
     #     self.password_hash = generate_password_hash(origin_password)
 
-    def check_password(self, passwd):
+    def check_password(self, password):
         """
         检验密码的正确性
         :param passwd: 用户登录时填写的原始密码
         :return: 如果正确，返回True,否则返回False
         """
-        check_password_hash(self.password_hash, passwd)
+        return check_password_hash(self.password_hash, password)
 
 
 class Area(BaseModel, db.Model):
