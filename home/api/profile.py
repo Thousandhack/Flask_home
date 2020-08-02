@@ -1,9 +1,13 @@
 # 主要是关于用户资料的
 from . import api
 from home.utils.commons import login_required
+from home.utils import constants
 from flask import g, current_app, jsonify, request
+from home import db
 from home.utils.response_code import RET
 from home.utils.image_storage import storage
+from home.models import User
+
 
 @api.route("/users/avatar", methods=["POST"])
 @login_required
@@ -22,7 +26,25 @@ def set_user_avatar():
         return jsonify(errno=RET.PARAMERR, errmsg="未上传图片")
     image_data = image_file.read()
 
-    # 调用七牛上传图片
-    storage(image_data)
+    # 调用七牛上传图片，返回文件名
+    try:
+        file_name = storage(image_data)
+    except Exception as e:
+        current_app.logger.error(e)
+        return jsonify(errno=RET.THIRDERR, errmsg="上传图片失败")
+
+    # 保存文件名到数据库中
+    try:
+        User.query.filter_by(id=user_id).update({"avatar_url": file_name})
+        db.session.commit()
+    except Exception as e:
+        current_app.logger.error(e)
+        db.session.rollback()
+        current_app.logger.error(e)
+        return jsonify(errno=RET.DBERR, errmsg="保存图片信息失败")
+
+    avatar_url = constants.QINIU_URL_DOMAIN + file_name
+    # 保存成功返回
+    return jsonify(errno=RET.OK, errmsg="保存成功", data={"avatar_url": avatar_url})
 
     #

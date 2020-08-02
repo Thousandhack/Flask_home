@@ -27,7 +27,10 @@ def storage(file_data):
     ret, info = put_data(token, None, file_data)  # None表示让七牛自动生成文件名
     if info.status_code == 200:
         # 表示上传成功
+        return ret.get("key")
+    else:
+        # 上传失败
+        raise Exception("上传失败")
 
-
-    print(ret)  # 返回一个结果对象
-    print(info)  # info['key']  为文件名
+    # print(ret)  # 返回一个结果对象
+    # print(info)  # info['key']  为文件名

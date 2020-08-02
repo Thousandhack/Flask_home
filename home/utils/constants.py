@@ -14,3 +14,6 @@ LOGIN_ERROR_MAX_TIMES = 5
 
 # 登录错误禁止时间 单位：秒
 LOGIN_ERROR_FORBIN_TIME = 300
+
+# 七牛云域名
+QINIU_URL_DOMAIN = 'http://o92qujngh.bkt.clouddn.cpm/'
