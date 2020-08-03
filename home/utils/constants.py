@@ -17,3 +17,6 @@ LOGIN_ERROR_FORBIN_TIME = 300
 
 # 七牛云域名
 QINIU_URL_DOMAIN = 'http://o92qujngh.bkt.clouddn.cpm/'
+
+# 城区信息的缓存时间 单位：秒
+AREA_INFO_REDIS_CACHE_EXPIRES = 3600

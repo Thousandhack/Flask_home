@@ -1699,3 +1699,10 @@ WARNING _internal.py:122  * Debugger is active!
 INFO _internal.py:122  * Debugger PIN: 299-190-182
 INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
 INFO _internal.py:122 127.0.0.1 - - [03/Aug/2020 22:32:07] "GET /api/v1.0/areas HTTP/1.1" 200 -
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 299-190-182
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [03/Aug/2020 22:55:02] "GET /api/v1.0/areas HTTP/1.1" 200 -
+INFO houses.py:29 hit data redis
+INFO _internal.py:122 127.0.0.1 - - [03/Aug/2020 22:55:07] "GET /api/v1.0/areas HTTP/1.1" 200 -
