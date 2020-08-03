@@ -4,4 +4,4 @@ from flask import Blueprint
 api = Blueprint("api_01", __name__)
 
 # 导入蓝图的视图
-from . import users, verify_code,passport
+from . import users, verify_code, passport, houses
