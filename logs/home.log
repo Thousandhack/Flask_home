@@ -1686,3 +1686,16 @@ INFO _internal.py:122  * Restarting with stat
 WARNING _internal.py:122  * Debugger is active!
 INFO _internal.py:122  * Debugger PIN: 299-190-182
 INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 299-190-182
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [03/Aug/2020 22:29:59] "POST /api/v1.0/areas HTTP/1.1" 405 -
+INFO _internal.py:122 127.0.0.1 - - [03/Aug/2020 22:30:03] "GET /api/v1.0/areas HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [03/Aug/2020 22:30:50] "GET /api/v1.0/areas HTTP/1.1" 500 -
+INFO _internal.py:122  * Detected change in 'D:\\pyCode\\flaskProject\\Flask_home\\home\\models.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 299-190-182
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [03/Aug/2020 22:32:07] "GET /api/v1.0/areas HTTP/1.1" 200 -
