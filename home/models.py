@@ -3,7 +3,7 @@
 from datetime import datetime
 from . import db
 from werkzeug.security import generate_password_hash, check_password_hash
-
+from home.utils import constants
 
 class BaseModel(object):
     """模型基类，为每个模型补充创建时间与更新时间"""
@@ -58,6 +58,28 @@ class User(BaseModel, db.Model):
         :return: 如果正确，返回True,否则返回False
         """
         return check_password_hash(self.password_hash, password)
+
+    def to_dict(self):
+        """将对象转换为字典"""
+        d = {
+            "id": self.id,
+            "name": self.name,
+            "mobile": self.mobile,
+            "avatar": constants.QINIU_URL_DOMAIN + self.avatar_url if self.avatar_url else "",
+            "create_time": self.create_time.strftime("%Y-%m-%d %H:%M:%S")
+        }
+        return d
+
+    def auth_to_dict(self):
+        """将实名信息转换为字典数据"""
+        auth_dict = {
+            "user_id":self.id,
+            "real_name":self.real_name,
+            "id_card":self.id_card
+        }
+
+        return auth_dict
+
 
 
 class Area(BaseModel, db.Model):

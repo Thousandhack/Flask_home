@@ -47,6 +47,8 @@ def set_user_avatar():
     # 保存成功返回
     return jsonify(errno=RET.OK, errmsg="保存成功", data={"avatar_url": avatar_url})
 
+    #
+
 
 @api.route("/users/name", methods=["PUT"])
 @login_required
@@ -76,3 +78,39 @@ def change_user_name():
     # 修改session数据中的name字段
     session['name'] = name
     return jsonify(errno=RET.OK, errmsg="OK", data={"name": name})
+
+
+@api.route("/user", methods=["GET"])
+# @login_required
+def get_user_profile():
+    """获取个人信息
+     GET 访问： http://127.0.0.1:5000/api/v1.0/user
+     login_required 注释才能进行postman调试
+    """
+    user_id = 2  # g.user_id
+    # 查询数据库获取个人信息
+    try:
+        user = User.query.get(user_id)
+        # print(user)
+    except Exception as e:
+        current_app.logger.error(e)
+        return jsonify(errno=RET.DBERR, errmsg="获取用户信息失败")
+    if user is None:
+        return jsonify(errno=RET.NODATA, errmsg="无效操作")
+    return jsonify(errno=RET.OK, ERRMSG="OK", data=user.to_dict())
+
+
+@api.route("/users/auth", methods=["GET"])
+@login_required
+def get_user_auth():
+    """保存实名认证信息"""
+    user_id = g.user_id
+    # 在数据库中查询信息
+    try:
+        user = User.query.get(user_id)
+    except Exception as e:
+        current_app.logger.error(e)
+        return jsonify(errno=RET.DBERR, errmsg="获取用户实名信息失败")
+    if user is None:
+        return jsonify(errno=RET.NODATA, errmsg="无效操作")
+    return jsonify(errno=RET.OK, ERRMSG="OK", data=user.auth_to_dict())

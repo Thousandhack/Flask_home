@@ -1706,3 +1706,93 @@ INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit
 INFO _internal.py:122 127.0.0.1 - - [03/Aug/2020 22:55:02] "GET /api/v1.0/areas HTTP/1.1" 200 -
 INFO houses.py:29 hit data redis
 INFO _internal.py:122 127.0.0.1 - - [03/Aug/2020 22:55:07] "GET /api/v1.0/areas HTTP/1.1" 200 -
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 299-190-182
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [04/Aug/2020 22:11:54] "GET /api/v1.0/users HTTP/1.1" 404 -
+INFO _internal.py:122 127.0.0.1 - - [04/Aug/2020 22:12:00] "GET /api/v1.0/user HTTP/1.1" 404 -
+INFO _internal.py:122 127.0.0.1 - - [04/Aug/2020 22:12:29] "GET /api/v1.0/user HTTP/1.1" 404 -
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 299-190-182
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [04/Aug/2020 22:13:30] "GET /api/v1.0/user HTTP/1.1" 404 -
+INFO _internal.py:122  * Detected change in 'D:\\pyCode\\flaskProject\\Flask_home\\home\\api\\__init__.py', reloading
+INFO _internal.py:122  * Restarting with stat
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 299-190-182
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [04/Aug/2020 22:15:16] "GET /api/v1.0/user HTTP/1.1" 500 -
+INFO _internal.py:122  * Detected change in 'D:\\pyCode\\flaskProject\\Flask_home\\home\\api\\profile.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 299-190-182
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Detected change in 'D:\\pyCode\\flaskProject\\Flask_home\\home\\api\\profile.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 299-190-182
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [04/Aug/2020 22:16:14] "GET /api/v1.0/user HTTP/1.1" 500 -
+INFO _internal.py:122  * Detected change in 'D:\\pyCode\\flaskProject\\Flask_home\\home\\api\\profile.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 299-190-182
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 299-190-182
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [04/Aug/2020 22:17:49] "GET /api/v1.0/user HTTP/1.1" 500 -
+INFO _internal.py:122  * Detected change in 'D:\\pyCode\\flaskProject\\Flask_home\\home\\api\\profile.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 299-190-182
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [04/Aug/2020 22:18:37] "GET /api/v1.0/user HTTP/1.1" 500 -
+INFO _internal.py:122  * Detected change in 'D:\\pyCode\\flaskProject\\Flask_home\\home\\api\\profile.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 299-190-182
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [04/Aug/2020 22:19:32] "GET /api/v1.0/user HTTP/1.1" 200 -
+INFO _internal.py:122  * Detected change in 'D:\\pyCode\\flaskProject\\Flask_home\\home\\api\\profile.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 299-190-182
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [04/Aug/2020 22:20:11] "GET /api/v1.0/user HTTP/1.1" 200 -
+INFO _internal.py:122  * Detected change in 'D:\\pyCode\\flaskProject\\Flask_home\\home\\api\\profile.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 299-190-182
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [04/Aug/2020 22:20:25] "GET /api/v1.0/user HTTP/1.1" 500 -
+INFO _internal.py:122 127.0.0.1 - - [04/Aug/2020 22:20:36] "GET /api/v1.0/user HTTP/1.1" 500 -
+INFO _internal.py:122 127.0.0.1 - - [04/Aug/2020 22:20:36] "GET /api/v1.0/user?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [04/Aug/2020 22:20:36] "GET /api/v1.0/user?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [04/Aug/2020 22:20:36] "GET /api/v1.0/user?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [04/Aug/2020 22:20:36] "GET /api/v1.0/user?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [04/Aug/2020 22:20:36] "GET /api/v1.0/user?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [04/Aug/2020 22:20:36] "GET /api/v1.0/user?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:122  * Detected change in 'D:\\pyCode\\flaskProject\\Flask_home\\home\\api\\profile.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 299-190-182
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [04/Aug/2020 22:20:58] "GET /api/v1.0/user HTTP/1.1" 200 -
+INFO _internal.py:122  * Detected change in 'D:\\pyCode\\flaskProject\\Flask_home\\home\\api\\profile.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 299-190-182
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [04/Aug/2020 22:21:10] "GET /api/v1.0/user HTTP/1.1" 200 -
+INFO _internal.py:122  * Detected change in 'D:\\pyCode\\flaskProject\\Flask_home\\home\\api\\profile.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 299-190-182
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Detected change in 'D:\\pyCode\\flaskProject\\Flask_home\\home\\api\\profile.py', reloading
+INFO _internal.py:122  * Restarting with stat
