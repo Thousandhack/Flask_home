@@ -4,9 +4,10 @@ from home.utils import constants
 from flask import g, current_app, jsonify, request
 from home import db
 from home.utils.response_code import RET
+from home.utils.image_storage import storage
 from home import redis_store
 from home.models import User
-from home.models import Area, House, Facility
+from home.models import Area, House, Facility, HouseImage
 import json
 
 
@@ -168,3 +169,54 @@ def save_house_info():
 
     # 保存数据成功
     return jsonify(errno=RET.OK, errmsg="OK", data={"house_id": house.id})
+
+
+@api.route("/houses/image", methods=["POST"])
+@login_required
+def save_house_image():
+    """保存房屋的图片
+    参数 图片 房屋的id
+    """
+    image_file = request.files.get("house_image")
+    house_id = request.form.get("house_id")
+
+    if not all([image_file, house_id]):
+        return jsonify(errno=RET.PARAMERR, errmsg="参数错误")
+
+    # 判断house_id正确性
+    try:
+        house = House.query.get(house_id)
+    except Exception as e:
+        current_app.logger.error(e)
+        return jsonify(errno=RET.DBERR, errmsg="数据库异常")
+
+    if house is None:  # if not house:
+        return jsonify(errno=RET.NODATA, errmsg="房屋不存在")
+
+    image_data = image_file.read()
+    # 保存图片到七牛中
+    try:
+        file_name = storage(image_data)
+    except Exception as e:
+        current_app.logger.error(e)
+        return jsonify(errno=RET.THIRDERR, errmsg="保存图片失败")
+
+    # 保存图片信息到数据库中
+    house_image = HouseImage(house_id=house_id, url=file_name)
+    db.session.add(house_image)
+
+    # 处理房屋的主图片
+    if not house.index_image_url:
+        house.index_image_url = file_name
+        db.session.add(house)
+
+    try:
+        db.session.commit()
+    except Exception as e:
+        current_app.logger.error(e)
+        db.session.rollback()
+        return jsonify(errno=RET.DBERR, errmsg="保存图片数据异常")
+
+    image_url = constants.QINIU_URL_DOMAIN + file_name
+
+    return jsonify(errno=RET.OK, errmsg="OK", data={"image_url": image_url})
