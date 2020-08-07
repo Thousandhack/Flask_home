@@ -5,6 +5,7 @@ from home.utils.response_code import RET
 from home import redis_store  # 导入redis 实例
 from home import db
 from home.libs.yuntongxun.sms import CCP
+from home.celery_tasks.sms.tasks import send_sms
 from home.models import User
 from flask import current_app
 from flask import make_response
@@ -126,8 +127,25 @@ def get_sms_code(mobile):
 
     # 使用异步的方式放松短信
     # 使用celery异步发送短信，delay函数调用后立即返回
-    from home.tasks.tasks_sms import send_sms
     # sms_code.delay(mobile,[sms_code, int(constants.SMS_CODE_REDIS_EXPIRES / 60)], 1)
+
+    # # 发送短信
+    # # 使用celery异步发送短信, delay函数调用后立即返回（非阻塞）
+    # send_sms.delay(mobile, [sms_code, int(constants.SMS_CODE_REDIS_EXPIRES/60)], 1)
+
+    # # 返回异步任务的对象
+    result_obj = send_sms.delay(mobile, [sms_code, int(constants.SMS_CODE_REDIS_EXPIRES / 60)], 1)
+    print("hhhhh")
+    print("123")
+    print(result_obj)
+    print(result_obj.id)
+    print("23333")
+    #
+    # # 通过异步任务对象的get方法获取异步任务的结果, 默认get方法是阻塞的
+    ret = result_obj.get()
+    print("ret=%s" % ret)
+    result = ret
+    print("1111111111")
 
     # if result == 0:
     #     # 返回值
