@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="92aa6ba2-ff83-4eea-aaf8-2a8a07edd130" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/home/tasks/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home/tasks/tasks_sms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/api/houses.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/api/houses.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/api/verify_code.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/api/verify_code.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/home.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/home.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes" beforeDir="false" afterPath="$PROJECT_DIR$/notes" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,26 +34,32 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/home/api/verify_code.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="4" column="6" selection-start-line="4" selection-end-line="4" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/home/utils/image_storage.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="638">
-              <caret line="30" column="9" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
+            <state relative-caret-position="-20">
+              <caret line="118" column="10" selection-start-line="118" selection-start-column="10" selection-end-line="118" selection-end-column="10" />
+              <folding>
+                <element signature="e#0#17#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/home/api/houses.py">
+        <entry file="file://$PROJECT_DIR$/notes">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="9" column="56" selection-start-line="9" selection-start-column="56" selection-end-line="9" selection-end-column="56" />
+            <state relative-caret-position="464">
+              <caret line="56" column="10" selection-start-line="56" selection-start-column="10" selection-end-line="56" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/home/tasks/tasks_sms.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret lean-forward="true" />
+              <folding>
+                <element signature="e#0#25#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -90,7 +100,6 @@
         <option value="$PROJECT_DIR$/home/libs/yuntongxun/sms.py" />
         <option value="$PROJECT_DIR$/home/libs/yuntongxun/CCPRestSDK.py" />
         <option value="$PROJECT_DIR$/home/__init__.py" />
-        <option value="$PROJECT_DIR$/home/api/verify_code.py" />
         <option value="$PROJECT_DIR$/home/static/js/ihome/register.js" />
         <option value="$PROJECT_DIR$/home/static/js/ihome/my.js" />
         <option value="$PROJECT_DIR$/home/static/js/ihome/login.js" />
@@ -99,7 +108,6 @@
         <option value="$PROJECT_DIR$/home/utils/image_storage.py" />
         <option value="$PROJECT_DIR$/home/static/html/profile.html" />
         <option value="$PROJECT_DIR$/home/utils/constants.py" />
-        <option value="$PROJECT_DIR$/notes" />
         <option value="$PROJECT_DIR$/home/models.py" />
         <option value="$PROJECT_DIR$/home/api/__init__.py" />
         <option value="$PROJECT_DIR$/home/api/profile.py" />
@@ -108,14 +116,18 @@
         <option value="$PROJECT_DIR$/home/static/js/ihome/newhouse.js" />
         <option value="$PROJECT_DIR$/home/static/html/newhouse.html" />
         <option value="$PROJECT_DIR$/home/api/houses.py" />
+        <option value="$PROJECT_DIR$/home/tasks/__init__.py" />
+        <option value="$PROJECT_DIR$/home/api/verify_code.py" />
+        <option value="$PROJECT_DIR$/home/tasks/tasks_sms.py" />
+        <option value="$PROJECT_DIR$/notes" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-345" />
-    <option name="y" value="42" />
-    <option name="width" value="1410" />
-    <option name="height" value="1104" />
+    <option name="x" value="237" />
+    <option name="y" value="26" />
+    <option name="width" value="1169" />
+    <option name="height" value="899" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -140,18 +152,6 @@
               <item name="home" type="462c0819:PsiDirectoryNode" />
               <item name="api" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Flask_home" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Flask_home" type="462c0819:PsiDirectoryNode" />
-              <item name="home" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Flask_home" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Flask_home" type="462c0819:PsiDirectoryNode" />
-              <item name="home" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -162,7 +162,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="E:/17 爱家租房项目/11-发布房源/Flask_home" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/home" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -290,18 +290,17 @@
       <workItem from="1596464646392" duration="2547000" />
       <workItem from="1596548653081" duration="3480000" />
       <workItem from="1596636197069" duration="5195000" />
-      <workItem from="1596723159616" duration="229000" />
+      <workItem from="1596723159616" duration="3594000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73455000" />
+    <option name="totallyTimeSpent" value="76820000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
+    <frame x="191" y="22" width="934" height="718" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16487935" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28082192" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -315,7 +314,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.06657224" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.051194537" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -472,13 +471,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/notes">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1188">
-          <caret line="54" selection-start-line="54" selection-end-line="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/home/utils/response_code.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
@@ -579,13 +571,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/home/api/verify_code.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="6" selection-start-line="4" selection-end-line="4" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/home/utils/image_storage.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="638">
@@ -595,8 +580,41 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/home/api/houses.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="56" selection-start-line="9" selection-start-column="56" selection-end-line="9" selection-end-column="56" />
+        <state relative-caret-position="345">
+          <caret line="212" column="8" selection-start-line="212" selection-start-column="8" selection-end-line="212" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#17#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home/tasks/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home/tasks/tasks_sms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home/api/verify_code.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-20">
+          <caret line="118" column="10" selection-start-line="118" selection-start-column="10" selection-end-line="118" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#17#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/notes">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="56" column="10" selection-start-line="56" selection-start-column="10" selection-end-line="56" selection-end-column="10" />
         </state>
       </provider>
     </entry>

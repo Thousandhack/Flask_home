@@ -123,9 +123,16 @@ def get_sms_code(mobile):
     # except Exception as e:
     #     current_app.logger(e)
     #     return jsonify(errno=RET.THIRDERR, errmsg="发送异常！")
+
+    # 使用异步的方式放松短信
+    # 使用celery异步发送短信，delay函数调用后立即返回
+    from home.tasks.tasks_sms import send_sms
+    # sms_code.delay(mobile,[sms_code, int(constants.SMS_CODE_REDIS_EXPIRES / 60)], 1)
+
     # if result == 0:
     #     # 返回值
     #     return jsonify(errno=RET.OK, errmsg="发送成功，%s" % sms_code)
     # else:
     #     return jsonify(errno=RET.THIRDERR, errmsg="发送失败！")
+
     return jsonify(errno=RET.OK, errmsg="发送成功，%s" % sms_code)
