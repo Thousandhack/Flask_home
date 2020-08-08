@@ -43,3 +43,9 @@ redis命令设置图片验证码键值对
 hset image_codes id1 abc
 获取键值对
 hget image_codes id1
+
+# 使用clelery需要安装
+pip install eventlet
+
+运行项目命令为
+>python manage.py runserver

@@ -2,7 +2,7 @@
 
 
 from celery import Celery
-# from home.celery_tasks import config
+from home.celery_tasks import config
 
 # 创建celery实例
 # 定义celery对象
@@ -17,3 +17,6 @@ celery_app.autodiscover_tasks(["home.celery_tasks.sms"])
 
 #
 # pip install eventlet
+
+# 运行celery 命令为
+
