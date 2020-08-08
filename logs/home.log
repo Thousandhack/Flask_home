@@ -2096,3 +2096,24 @@ INFO _internal.py:122  * Restarting with stat
 WARNING _internal.py:122  * Debugger is active!
 INFO _internal.py:122  * Debugger PIN: 299-190-182
 INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [08/Aug/2020 19:14:08] "GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map HTTP/1.1" 404 -
+INFO _internal.py:122 127.0.0.1 - - [08/Aug/2020 19:14:21] "POST /api/v1.0/sessions HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [08/Aug/2020 19:14:21] "GET /api/v1.0/session HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [08/Aug/2020 19:14:21] "GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map HTTP/1.1" 404 -
+INFO _internal.py:122  * Detected change in 'D:\\pyCode\\flaskProject\\Flask_home\\home\\api\\houses.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 299-190-182
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Detected change in 'D:\\pyCode\\flaskProject\\Flask_home\\home\\api\\houses.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 299-190-182
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Detected change in 'D:\\pyCode\\flaskProject\\Flask_home\\home\\models.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 299-190-182
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Detected change in 'D:\\pyCode\\flaskProject\\Flask_home\\home\\models.py', reloading
+INFO _internal.py:122  * Restarting with stat

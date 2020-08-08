@@ -220,3 +220,24 @@ def save_house_image():
     image_url = constants.QINIU_URL_DOMAIN + file_name
 
     return jsonify(errno=RET.OK, errmsg="OK", data={"image_url": image_url})
+
+
+@api.route("/user/hourses", methods=["GET"])
+@login_required
+def get_user_hourses():
+    """获取房东发布的房源信息条目"""
+    user_id = g.user_id
+    try:
+        user = User.query.get(user_id)
+        houses = user.houses
+    except Exception as e:
+        current_app.logger.error(e)
+        return jsonify(errno=RET.DBERR, errmsg="获取数据失败")
+
+    # 将查询到的房屋信息转换为字典放到列表中
+    houses_list = []
+    if houses:
+        for house in houses:
+            houses_list.append(house.to_basic_dict())
+
+    return jsonify(errno=RET.OK, errmsg="OK", data={"houses": houses_list})

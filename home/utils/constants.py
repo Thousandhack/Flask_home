@@ -20,3 +20,15 @@ QINIU_URL_DOMAIN = 'http://o92qujngh.bkt.clouddn.cpm/'
 
 # 城区信息的缓存时间 单位：秒
 AREA_INFO_REDIS_CACHE_EXPIRES = 3600
+
+# 房屋详情页展示的评论最大数
+HOUSE_DETAIL_COMMENT_DISPLAY_COUNTS = 30
+
+# 房屋详情页面数据Redis缓存时间，单位：秒
+HOUSE_DETAIL_REDIS_EXPIRE_SECOND = 7200
+
+# 房屋列表页面每页数据容量
+HOUSE_LIST_PAGE_CAPACITY = 2
+
+# 房屋列表页面页数缓存时间，单位秒
+HOUES_LIST_PAGE_REDIS_CACHE_EXPIRES = 7200
