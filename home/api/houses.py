@@ -7,8 +7,9 @@ from home import db
 from home.utils.response_code import RET
 from home.utils.image_storage import storage
 from home import redis_store
-from home.models import User
+from home.models import User, Order
 from home.models import Area, House, Facility, HouseImage
+from datetime import datetime
 import json
 
 
@@ -452,3 +453,84 @@ def get_house_detail(house_id):
         "Content-Type": "application/json"}
 
     return resp
+
+
+@api.route("/houses")
+def get_house_list():
+    """
+    # GET  /api/v1.0/houses?sd=20200807&ed=20200810&aid=10&sk=new&page=1
+    获取房屋的列表信息（搜索页面）
+    # strptime 从字符串转为时间
+    # strftime 从时间转为字符串
+    # %H%M%S  时分秒
+
+    最新上线  new
+    入住最多   booking
+    价格低-高   price-inc
+    价格高-低   price-des
+    :return:
+    """
+    start_date = request.args.get("sd")  # 用户想要的起始时间
+    end_date = request.args.get("ed")  # 用户想要的结束时间
+    area_id = request.args.get("aid")  # 区域编号
+    sort_key = request.args.get("sk")  # 排序
+    page = request.args.get("page")  # 页数
+
+    try:
+        if start_date:
+            datetime.strptime(start_date, "%Y-%m-%d")
+        if end_date:
+            datetime.strptime(end_date, "%Y-%m-%d")
+        if start_date and end_date:
+            assert start_date <= end_date
+    except Exception as e:
+        current_app.logger.error(e)
+        return jsonify(errno=RET.PARAMERR, errmsg="日期参数有误")
+    # 判断区域id
+    try:
+        area = Area.query.get(area_id)
+    except Exception as e:
+        current_app.logger.error(e)
+        return jsonify(errno=RET.PARAMERR, errmsg="区域参数有误")
+    # 处理页数
+    try:
+        page = int(page)
+    except Exception as e:
+        current_app.logger.error(e)
+        page = 1
+    # 过滤条件的参数容器
+    filter_params = []
+
+    # 填充过滤参数
+    # 时间条件
+    conflict_orders = None
+    if start_date and end_date:
+        # 查询冲突的订单
+        conflict_orders = Order.query.filter(Order.begin_date <= end_date, Order.end_date >= start_date).all()
+    elif start_date:
+        # 查询冲突的订单
+        conflict_orders = Order.query.filter(Order.end_date >= start_date).all()
+    elif end_date:
+        conflict_orders = Order.query.filter(Order.begin_date <= end_date).all()
+
+    # 从订单中获取的所有房屋id
+    conflict_house_ids = [conflict_order.id for conflict_order in conflict_orders]
+    # 如果冲突的房屋id不为空，向查询参数中添加条件
+    if conflict_house_ids:
+        filter_params.append(House.id.notin_(conflict_house_ids))
+
+    # 区域条件
+    if area_id:
+        filter_params.append(House.area_id == area_id)
+
+    # 查询数据库
+    # 排序方式条件
+    # asc 正序   desc 倒序
+    if sort_key == "booking":  # 入住最多
+        House.query.filter(*filter_params).order_by(House.order_count.desc())
+    elif sort_key == "price-inc":
+        House.query.filter(*filter_params).orser_by(House.price.asc())
+    elif sort_key == "price-des":
+        House.query.filter(*filter_params).orser_by(House.price.desc())
+    else:  # 模型从新到旧 sort_key == "new":
+        House.query.filter(*filter_params).order_by(House.create_time.desc())
