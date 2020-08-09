@@ -2117,3 +2117,120 @@ INFO _internal.py:122  * Debugger PIN: 299-190-182
 INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
 INFO _internal.py:122  * Detected change in 'D:\\pyCode\\flaskProject\\Flask_home\\home\\models.py', reloading
 INFO _internal.py:122  * Restarting with stat
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 299-190-182
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [09/Aug/2020 10:32:29] "POST /api/v1.0/sessions/ HTTP/1.1" 405 -
+INFO _internal.py:122 127.0.0.1 - - [09/Aug/2020 10:33:00] "POST /api/v1.0/sessions/ HTTP/1.1" 405 -
+INFO _internal.py:122 127.0.0.1 - - [09/Aug/2020 10:33:11] "POST /api/v1.0/sessions HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [09/Aug/2020 10:33:19] "POST /api/v1.0/sessions HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [09/Aug/2020 10:33:29] "POST /api/v1.0/sessions HTTP/1.1" 200 -
+INFO _internal.py:122  * Detected change in 'D:\\pyCode\\flaskProject\\Flask_home\\home\\api\\passport.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 299-190-182
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [09/Aug/2020 10:34:07] "GET /api/v1.0/session HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [09/Aug/2020 10:44:57] "GET /api/v1.0/user/houses HTTP/1.1" 200 -
+INFO _internal.py:122  * Detected change in 'D:\\pyCode\\flaskProject\\Flask_home\\home\\api\\houses.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 299-190-182
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Detected change in 'D:\\pyCode\\flaskProject\\Flask_home\\home\\api\\houses.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 299-190-182
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Detected change in 'D:\\pyCode\\flaskProject\\Flask_home\\home\\api\\houses.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 299-190-182
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Detected change in 'D:\\pyCode\\flaskProject\\Flask_home\\home\\api\\houses.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 299-190-182
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Detected change in 'D:\\pyCode\\flaskProject\\Flask_home\\home\\api\\houses.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 299-190-182
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Detected change in 'D:\\pyCode\\flaskProject\\Flask_home\\home\\api\\houses.py', reloading
+INFO _internal.py:122  * Restarting with stat
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 299-190-182
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [09/Aug/2020 11:20:45] "GET /api/v1.0/houses/index HTTP/1.1" 200 -
+INFO houses.py:288 hit house index of redis
+INFO _internal.py:122 127.0.0.1 - - [09/Aug/2020 11:21:21] "GET /api/v1.0/houses/index HTTP/1.1" 200 -
+INFO _internal.py:122  * Detected change in 'D:\\pyCode\\flaskProject\\Flask_home\\home\\api\\houses.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 299-190-182
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO houses.py:288 hit house index of redis
+INFO _internal.py:122 127.0.0.1 - - [09/Aug/2020 11:22:45] "GET /api/v1.0/houses/index HTTP/1.1" 200 -
+INFO houses.py:288 hit house index of redis
+INFO _internal.py:122 127.0.0.1 - - [09/Aug/2020 11:22:47] "GET /api/v1.0/houses/index HTTP/1.1" 200 -
+INFO houses.py:288 hit house index of redis
+INFO _internal.py:122 127.0.0.1 - - [09/Aug/2020 11:22:48] "GET /api/v1.0/houses/index HTTP/1.1" 200 -
+INFO _internal.py:122  * Detected change in 'D:\\pyCode\\flaskProject\\Flask_home\\home\\api\\houses.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 299-190-182
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO houses.py:288 hit house index of redis
+INFO _internal.py:122 127.0.0.1 - - [09/Aug/2020 11:23:15] "GET /api/v1.0/houses/index HTTP/1.1" 200 -
+INFO _internal.py:122  * Detected change in 'D:\\pyCode\\flaskProject\\Flask_home\\home\\api\\houses.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 299-190-182
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO houses.py:288 hit house index of redis
+INFO _internal.py:122 127.0.0.1 - - [09/Aug/2020 11:24:21] "GET /api/v1.0/houses/index HTTP/1.1" 200 -
+INFO _internal.py:122  * Detected change in 'D:\\pyCode\\flaskProject\\Flask_home\\home\\api\\houses.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 299-190-182
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO houses.py:290 hit house index of redis
+INFO _internal.py:122 127.0.0.1 - - [09/Aug/2020 11:24:52] "GET /api/v1.0/houses/index HTTP/1.1" 200 -
+INFO _internal.py:122  * Detected change in 'D:\\pyCode\\flaskProject\\Flask_home\\home\\api\\houses.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 299-190-182
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [09/Aug/2020 11:26:28] "GET /api/v1.0/houses/index HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [09/Aug/2020 11:29:32] "GET /api/v1.0/houses/index HTTP/1.1" 200 -
+INFO _internal.py:122  * Detected change in 'D:\\pyCode\\flaskProject\\Flask_home\\home\\models.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 299-190-182
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Detected change in 'D:\\pyCode\\flaskProject\\Flask_home\\home\\models.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 299-190-182
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [09/Aug/2020 11:32:10] "GET /api/v1.0/houses/index HTTP/1.1" 200 -
+INFO _internal.py:122  * Detected change in 'D:\\pyCode\\flaskProject\\Flask_home\\home\\api\\houses.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 299-190-182
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO houses.py:290 hit house index of redis
+INFO _internal.py:122 127.0.0.1 - - [09/Aug/2020 11:33:28] "GET /api/v1.0/houses/index HTTP/1.1" 200 -
+INFO _internal.py:122  * Detected change in 'D:\\pyCode\\flaskProject\\Flask_home\\home\\api\\houses.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 299-190-182
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Detected change in 'D:\\pyCode\\flaskProject\\Flask_home\\home\\api\\houses.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 299-190-182
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)

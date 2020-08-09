@@ -111,7 +111,7 @@ def login():
     在同个地方登录超过5次后10分钟内不能再次登录
     接口测试：
     访问URL:
-        http://127.0.0.1:5000/api/v1.0/sessions/
+        http://127.0.0.1:5000/api/v1.0/sessions
         {
             "mobile":"18611111111",
             "password":"1238456"

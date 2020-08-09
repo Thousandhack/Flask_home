@@ -143,11 +143,11 @@ class House(BaseModel, db.Model):
             "title": self.title,
             "price": self.price,
             "area_name": self.area.name,
-            "img_url": constants.QINIU_URL_DOMAIN + self.index_image_url if self.index_image_url else "",
+            "img_url": self.index_image_url if self.index_image_url else "",  # constants.QINIU_URL_DOMAIN +
             "room_count": self.room_count,
             "order_count": self.order_count,
             "address": self.address,
-            "user_avatar": constants.QINIU_URL_DOMAIN + self.user.avatar_url if self.user.avatar_url else "",
+            "user_avatar": self.user.avatar_url if self.user.avatar_url else "",  # constants.QINIU_URL_DOMAIN +
             "ctime": self.create_time.strftime("%Y-%m-%d")
         }
         return house_dict

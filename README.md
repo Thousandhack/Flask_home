@@ -49,3 +49,6 @@ pip install eventlet
 
 运行项目命令为
 >python manage.py runserver
+
+想要测试其他的接口，先访问登录接口，之后登录接口会将session存到postman中
+

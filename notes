@@ -59,3 +59,7 @@
 
 豆瓣：http://pypi.douban.com/simple/  --trusted-host pypi.douban.com
 清华：http://pypi.tuna.tsinghua.edu.cn/simple
+
+# redis 命令
+# get key
+# del key

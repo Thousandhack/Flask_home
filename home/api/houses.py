@@ -222,14 +222,43 @@ def save_house_image():
     return jsonify(errno=RET.OK, errmsg="OK", data={"image_url": image_url})
 
 
-@api.route("/user/hourses", methods=["GET"])
+@api.route("/user/houses", methods=["GET"])
 @login_required
-def get_user_hourses():
-    """获取房东发布的房源信息条目"""
+def get_user_houses():
+    """
+    获取房东发布的房源信息条目
+    已经是postman登录的状态进行访问接口：
+    http://127.0.0.1:5000/api/v1.0/user/houses
+    返回信息：
+            {
+          "data": {
+            "houses": [
+              {
+                "address": "测试地址111",
+                "area_name": "西城区",
+                "ctime": "2020-08-06",
+                "house_id": 1,
+                "img_url": "",
+                "order_count": 0,
+                "price": 39900,
+                "room_count": 3,
+                "title": "测试1",
+                "user_avatar": ""
+              }
+            ]
+          },
+          "errmsg": "OK",
+          "errno": "0"
+        }
+    :return:
+    """
     user_id = g.user_id
     try:
         user = User.query.get(user_id)
+        # 通过user中relationship的关系字段查询这个用户发布房源
         houses = user.houses
+        # 另外一种方式查询
+        # House.query.filter_by(user_id=user_id)
     except Exception as e:
         current_app.logger.error(e)
         return jsonify(errno=RET.DBERR, errmsg="获取数据失败")
@@ -241,3 +270,69 @@ def get_user_hourses():
             houses_list.append(house.to_basic_dict())
 
     return jsonify(errno=RET.OK, errmsg="OK", data={"houses": houses_list})
+
+
+@api.route("/houses/index", methods=["GET"])
+def get_house_index():
+    """
+    获取主页幻灯片的房屋信息接口
+    访问url: http://127.0.0.1:5000/api/v1.0/houses/index
+    返回数据为:
+        {
+            "errno"：0,
+            "errmsg": "OK",
+            "data":b'[
+                {
+                    "house_id": 1,
+                    "title": "\测\试1",
+                    "price": 39900,
+                    "area_name": "\西\城\区",
+                    "img_url": "D:\\\\pyCode\\\\flaskProject\\\\Flask_home\\\\home\\\\static\\\\images\\\\home01.jpg",
+                    "room_count": 3,
+                    "order_count": 5,
+                    "address": "\测\试\地\址111",
+                    "user_avatar": "",
+                    "ctime": "2020-08-06"
+                }
+            ]'
+        }
+    :return:
+    """
+    # 从缓存中尝试获取数据
+    try:
+        ret = redis_store.get("home_page_data")
+
+        print(ret)
+    except Exception as e:
+        current_app.logger.error(e)
+        ret = None
+    if ret:
+        current_app.logger.info("hit house index of redis")
+        # 因为redis 中保存的是json字符串，所以直接进行字符串拼接返回
+        return '{"errno"：0,"errmsg":"OK","data":%s}' % ret, 200, {"Content-Type": "application/json"}
+    else:
+        try:
+            # 查询数据库，返回房屋订单数目最多的5条数据
+            # 根据订单的数量分组
+            houses = House.query.order_by(House.order_count.desc()).limit(constants.HOME_PAGE_MAX_HOUSES)
+        except Exception as e:
+            current_app.logger.error(e)
+            return jsonify(errno=RET.DBERR, errmsg="查询数据失败")
+
+        if not houses:
+            return jsonify(errno=RET.NODATA, errmsg="查询无数据")
+
+        house_list = []
+        for house in houses:
+            # 如果房屋未设置图片，则跳过（因为首页展示的需要房屋图片）
+            if not house.index_image_url:
+                continue
+            house_list.append(house.to_basic_dict())
+        # 将数据转换成json,并保存到redis缓存中
+        json_houses = json.dumps(house_list)
+        try:
+            redis_store.setex("home_page_data", constants.HOME_PAGE_DATA_REDIS_EXPIRES, json_houses)
+        except Exception as e:
+            current_app.logger.error(e)
+
+        return '{"errno":0,"errmsg":"OK","data":%s}' % json_houses, 200, {"Content-Type": "application/json"}
