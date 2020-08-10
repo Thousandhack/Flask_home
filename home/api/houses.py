@@ -468,13 +468,39 @@ def get_house_list():
     入住最多   booking
     价格低-高   price-inc
     价格高-低   price-des
+
+    访问URL: http://127.0.0.1:5000/api/v1.0/houses
+    返回的结果;
+        {
+          "data": {
+            "current_page": null,
+            "houses": [
+              {
+                "address": "测试地址 1",
+                "area_name": "东城区",
+                "ctime": "2020-08-06",
+                "house_id": 1,
+                "img_url": "",
+                "order_count": 0,
+                "price": 39900,
+                "room_count": 3,
+                "title": "测试1",
+                "user_avatar": ""
+              }
+            ],
+            "total_page": 1
+          },
+          "errmsg": "OK",
+          "errno": "0"
+        }
     :return:
     """
-    start_date = request.args.get("sd")  # 用户想要的起始时间
-    end_date = request.args.get("ed")  # 用户想要的结束时间
-    area_id = request.args.get("aid")  # 区域编号
-    sort_key = request.args.get("sk")  # 排序
-    page = request.args.get("page")  # 页数
+    start_date = request.args.get("sd", "")  # 用户想要的起始时间
+    end_date = request.args.get("ed", "")  # 用户想要的结束时间
+    area_id = request.args.get("aid", "")  # 区域编号
+    sort_key = request.args.get("sk", "")  # 排序
+    page = request.args.get("page", "")  # 页数
+    per_page = request.args.get("size", "")  # 每页数量
 
     try:
         if start_date:
@@ -487,34 +513,52 @@ def get_house_list():
         current_app.logger.error(e)
         return jsonify(errno=RET.PARAMERR, errmsg="日期参数有误")
     # 判断区域id
-    try:
-        area = Area.query.get(area_id)
-    except Exception as e:
-        current_app.logger.error(e)
-        return jsonify(errno=RET.PARAMERR, errmsg="区域参数有误")
+    if area_id:
+        try:
+            area = Area.query.get(area_id)
+        except Exception as e:
+            current_app.logger.error(e)
+            return jsonify(errno=RET.PARAMERR, errmsg="区域参数有误")
     # 处理页数
-    try:
-        page = int(page)
-    except Exception as e:
-        current_app.logger.error(e)
-        page = 1
+    if page:
+        try:
+            page = int(page)
+        except Exception as e:
+            current_app.logger.error(e)
+            page = 1
+
+    # 处理页数
+    if per_page:
+        try:
+            per_page = int(per_page)
+        except Exception as e:
+            current_app.logger.error(e)
+            per_page = constants.HOUSE_LIST_PAGE_CAPACITY
+
     # 过滤条件的参数容器
     filter_params = []
 
     # 填充过滤参数
     # 时间条件
     conflict_orders = None
-    if start_date and end_date:
-        # 查询冲突的订单
-        conflict_orders = Order.query.filter(Order.begin_date <= end_date, Order.end_date >= start_date).all()
-    elif start_date:
-        # 查询冲突的订单
-        conflict_orders = Order.query.filter(Order.end_date >= start_date).all()
-    elif end_date:
-        conflict_orders = Order.query.filter(Order.begin_date <= end_date).all()
-
+    try:
+        if start_date and end_date:
+            # 查询冲突的订单
+            conflict_orders = Order.query.filter(Order.begin_date <= end_date, Order.end_date >= start_date).all()
+        elif start_date:
+            # 查询冲突的订单
+            conflict_orders = Order.query.filter(Order.end_date >= start_date).all()
+        elif end_date:
+            conflict_orders = Order.query.filter(Order.begin_date <= end_date).all()
+    except Exception as e:
+        current_app.logger.error(e)
+        return jsonify(errno=RET.DBERR, errmsg="查询数据库异常")
+    # print(conflict_orders)
     # 从订单中获取的所有房屋id
-    conflict_house_ids = [conflict_order.id for conflict_order in conflict_orders]
+    if conflict_orders:
+        conflict_house_ids = [conflict_order.id for conflict_order in conflict_orders]
+    else:
+        conflict_house_ids = []
     # 如果冲突的房屋id不为空，向查询参数中添加条件
     if conflict_house_ids:
         filter_params.append(House.id.notin_(conflict_house_ids))
@@ -527,10 +571,30 @@ def get_house_list():
     # 排序方式条件
     # asc 正序   desc 倒序
     if sort_key == "booking":  # 入住最多
-        House.query.filter(*filter_params).order_by(House.order_count.desc())
+        houuse_query = House.query.filter(*filter_params).order_by(House.order_count.desc())
     elif sort_key == "price-inc":
-        House.query.filter(*filter_params).orser_by(House.price.asc())
+        houuse_query = House.query.filter(*filter_params).orser_by(House.price.asc())
     elif sort_key == "price-des":
-        House.query.filter(*filter_params).orser_by(House.price.desc())
+        houuse_query = House.query.filter(*filter_params).orser_by(House.price.desc())
     else:  # 模型从新到旧 sort_key == "new":
-        House.query.filter(*filter_params).order_by(House.create_time.desc())
+        houuse_query = House.query.filter(*filter_params).order_by(House.create_time.desc())
+
+    # 处理分页
+    # page 表示查询第几页数据
+    # per_page 表示每页的数据量
+    # ,error_out 表示自动的错误输出
+    try:
+        page_obj = houuse_query.paginate(page=page, per_page=per_page, error_out=False)
+    except Exception as e:
+        current_app.logger.error(e)
+        return jsonify(errno=RET.DBERR, errmsg="查询数据库异常")
+    # 获取页面数据
+    house_list = page_obj.items
+    houses = []
+    for house in house_list:
+        houses.append(house.to_basic_dict())
+
+    # 获取总页数
+    total_page = page_obj.pages
+
+    return jsonify(errno=RET.OK, errmsg="OK", data={"total_page": total_page, "houses": houses, "current_page": page})
