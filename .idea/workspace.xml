@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="92aa6ba2-ff83-4eea-aaf8-2a8a07edd130" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home/api/houses.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/api/houses.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/utils/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/utils/constants.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/home.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/home.log" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,11 +31,39 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/home/api/houses.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="428">
-              <caret line="597" column="31" lean-forward="true" selection-start-line="597" selection-start-column="31" selection-end-line="597" selection-end-column="31" />
+            <state relative-caret-position="62">
+              <caret line="742" column="28" selection-start-line="742" selection-start-column="28" selection-end-line="742" selection-end-column="28" />
               <folding>
                 <element signature="e#0#17#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/home/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="228" column="23" lean-forward="true" selection-start-line="228" selection-start-column="23" selection-end-line="228" selection-end-column="23" />
+              <folding>
+                <element signature="e#24#53#0" expanded="true" />
+                <element signature="e#1055#1089#0" />
+                <element signature="e#1150#1301#0" />
+                <element signature="e#1387#1570#0" />
+                <element signature="e#1576#1628#0" />
+                <element signature="e#1773#1945#0" />
+                <element signature="e#1978#2295#0" />
+                <element signature="e#2333#2518#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/home/utils/constants.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="380">
+              <caret line="41" column="12" selection-start-line="41" selection-start-column="12" selection-end-line="41" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -94,22 +123,21 @@
         <option value="$PROJECT_DIR$/home/api/verify_code.py" />
         <option value="$PROJECT_DIR$/home/api/passport.py" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/home/utils/constants.py" />
         <option value="$PROJECT_DIR$/home/models.py" />
         <option value="$PROJECT_DIR$/notes" />
         <option value="$PROJECT_DIR$/home/static/js/ihome/myhouse.js" />
         <option value="$PROJECT_DIR$/home/static/html/myhouse.html" />
         <option value="$PROJECT_DIR$/home/static/js/ihome/index.js" />
         <option value="$PROJECT_DIR$/home/static/js/ihome/detail.js" />
+        <option value="$PROJECT_DIR$/home/utils/constants.py" />
         <option value="$PROJECT_DIR$/home/api/houses.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="415" />
-    <option name="y" value="117" />
-    <option name="width" value="1479" />
-    <option name="height" value="789" />
+    <option name="x" value="-8" />
+    <option name="width" value="977" />
+    <option name="height" value="1038" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -133,6 +161,12 @@
               <item name="Flask_home" type="462c0819:PsiDirectoryNode" />
               <item name="home" type="462c0819:PsiDirectoryNode" />
               <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Flask_home" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Flask_home" type="462c0819:PsiDirectoryNode" />
+              <item name="home" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -277,18 +311,18 @@
       <workItem from="1596881926910" duration="6297000" />
       <workItem from="1596902958290" duration="254000" />
       <workItem from="1596937553137" duration="15101000" />
-      <workItem from="1597066200168" duration="317000" />
+      <workItem from="1597066200168" duration="5764000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="102618000" />
+    <option name="totallyTimeSpent" value="108065000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17828418" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1152815" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -302,7 +336,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.04249292" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.12747875" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -563,23 +597,6 @@
     <entry file="file://$PROJECT_DIR$/home/static/images/home01.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/home/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="191" column="23" lean-forward="true" selection-start-line="191" selection-start-column="23" selection-end-line="191" selection-end-column="23" />
-          <folding>
-            <element signature="e#24#53#0" expanded="true" />
-            <element signature="e#1055#1089#0" />
-            <element signature="e#1150#1301#0" />
-            <element signature="e#1387#1570#0" />
-            <element signature="e#1576#1628#0" />
-            <element signature="e#1773#1945#0" />
-            <element signature="e#1978#2295#0" />
-            <element signature="e#2333#2518#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/home/static/js/ihome/detail.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="274">
@@ -625,13 +642,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/home/utils/constants.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/home/api/profile.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="274">
@@ -639,10 +649,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/home/utils/constants.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="41" column="12" selection-start-line="41" selection-start-column="12" selection-end-line="41" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="228" column="23" lean-forward="true" selection-start-line="228" selection-start-column="23" selection-end-line="228" selection-end-column="23" />
+          <folding>
+            <element signature="e#24#53#0" expanded="true" />
+            <element signature="e#1055#1089#0" />
+            <element signature="e#1150#1301#0" />
+            <element signature="e#1387#1570#0" />
+            <element signature="e#1576#1628#0" />
+            <element signature="e#1773#1945#0" />
+            <element signature="e#1978#2295#0" />
+            <element signature="e#2333#2518#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/home/api/houses.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
-          <caret line="597" column="31" lean-forward="true" selection-start-line="597" selection-start-column="31" selection-end-line="597" selection-end-column="31" />
+        <state relative-caret-position="62">
+          <caret line="742" column="28" selection-start-line="742" selection-start-column="28" selection-end-line="742" selection-end-column="28" />
           <folding>
             <element signature="e#0#17#0" expanded="true" />
           </folding>
