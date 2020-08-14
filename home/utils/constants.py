@@ -42,3 +42,5 @@ HOUES_LIST_PAGE_REDIS_CACHE_EXPIRES = 7200
 # 房屋列表页数缓存时间，单位：秒
 HOUSE_LIST_PAGE_REDIS_CACHE_EXPIRES = 7200
 
+# 支付宝支付地址域名 https://openapi.alipay.com/gateway.do? # 真是环境
+ALIPAY_URL_PREFIX = "https://openapi.alipaydev.com/gateway.do?",  # 沙箱支付宝网关地址

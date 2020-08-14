@@ -5,6 +5,7 @@ from flask import g
 from flask import current_app
 from flask import jsonify
 from home.utils.response_code import RET
+from home.utils import constants
 from alipay import Alipay
 import os
 
@@ -44,3 +45,5 @@ def order_pay(order_id):
         notify_url=None  # 可选，不填则使用默认notify url
     )
     # 构建让用户跳转的支付
+    pay_url = constants.ALIPAY_URL_PREFIX + order_string
+    return jsonify(errno=RET.OK, errmsg="ok", data={"pay_url": pay_url})
