@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="92aa6ba2-ff83-4eea-aaf8-2a8a07edd130" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/api/passport.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/api/passport.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes" beforeDir="false" afterPath="$PROJECT_DIR$/notes" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,11 +38,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/notes">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="439">
-              <caret line="64" column="5" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
+            <state relative-caret-position="459">
+              <caret line="97" column="4" selection-start-line="97" selection-start-column="4" selection-end-line="97" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -84,11 +82,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/home/api/passport.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="190" column="17" lean-forward="true" selection-start-line="190" selection-start-column="17" selection-end-line="190" selection-end-column="17" />
+            <state relative-caret-position="220">
+              <caret line="194" lean-forward="true" selection-start-line="194" selection-end-line="194" />
               <folding>
                 <element signature="e#0#17#0" expanded="true" />
               </folding>
@@ -145,7 +143,6 @@
         <option value="$PROJECT_DIR$/config.py" />
         <option value="$PROJECT_DIR$/home/__init__.py" />
         <option value="$PROJECT_DIR$/home/api/verify_code.py" />
-        <option value="$PROJECT_DIR$/notes" />
         <option value="$PROJECT_DIR$/home/static/js/ihome/myhouse.js" />
         <option value="$PROJECT_DIR$/home/static/html/myhouse.html" />
         <option value="$PROJECT_DIR$/home/static/js/ihome/index.js" />
@@ -167,12 +164,13 @@
         <option value="$PROJECT_DIR$/home/api/pay.py" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/home/api/passport.py" />
+        <option value="$PROJECT_DIR$/notes" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="807" />
-    <option name="y" value="76" />
+    <option name="x" value="788" />
+    <option name="y" value="112" />
     <option name="width" value="1555" />
     <option name="height" value="910" />
   </component>
@@ -384,18 +382,18 @@
       <workItem from="1597415560073" duration="4446000" />
       <workItem from="1597502619724" duration="1671000" />
       <workItem from="1597504303488" duration="2873000" />
-      <workItem from="1597586782399" duration="111000" />
+      <workItem from="1597586782399" duration="2443000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="127749000" />
+    <option name="totallyTimeSpent" value="130081000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="646" y="61" width="1244" height="728" extended-state="0" />
+    <frame x="631" y="90" width="1244" height="728" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22428331" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22428331" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -409,7 +407,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.15939598" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.11241611" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -763,20 +761,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/notes">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="439">
-          <caret line="64" column="5" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/home/api/passport.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="190" column="17" lean-forward="true" selection-start-line="190" selection-start-column="17" selection-end-line="190" selection-end-column="17" />
+        <state relative-caret-position="220">
+          <caret line="194" lean-forward="true" selection-start-line="194" selection-end-line="194" />
           <folding>
             <element signature="e#0#17#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/notes">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="97" column="4" selection-start-line="97" selection-start-column="4" selection-end-line="97" selection-end-column="4" />
         </state>
       </provider>
     </entry>
